@@ -5,20 +5,22 @@ function iPhone1(ASIN,color,display,camera){
     obj.display=display;
     obj.camera=camera;
     obj.dial=function(){
-        console.log('tring.. tring...');
+        return 'tring.. tring...'
     }
     obj.sendMessage = function(){
-        console.log("Sending message...");
+        return "Sending message..."
     }
     obj.cameraClick=function(){
-        console.log("Camera clicked"); 
+        return"Camera clicked" 
     }
     return obj;
 }
 
 let data =iPhone1(44537,'blue','5.7','108')
 console.log(data);
-// data.cameraClick();
+console.log(data.dial());
+console.log(data.sendMessage());
+console.log(data.cameraClick());
 
 //-------------------------------    problem 2      ----------------------------------------------------------------
 
@@ -30,16 +32,16 @@ function iPhone2(ASIN,color,display,camera,Bluetooth){
     obj.camera=camera;
     obj.Bluetooth=Bluetooth
     obj.dial=function(){
-        console.log('tring.. tring...');
+        return 'tring.. tring...'
     }
     obj.sendMessage = function(){
-        console.log("Sending message...");
+        return "Sending message..."
     }
     obj.cameraClick=function(){
-        console.log("Camera clicked"); 
+        return "Camera clicked" 
     }
     obj.connectBluetooth=function(){
-        console.log("Bluetooth connected successfully...");
+        return "Bluetooth connected successfully..."
     } 
 
 
@@ -48,5 +50,8 @@ function iPhone2(ASIN,color,display,camera,Bluetooth){
 
 let data2 =iPhone2(44537,'blue','5.7','108','5.3')
 console.log(data2);
-
+console.log(data2.dial());
+console.log(data2.sendMessage());
+console.log(data2.cameraClick());
+console.log(data2.connectBluetooth());
 
